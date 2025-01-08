@@ -47,49 +47,6 @@ const contractABI = [
 ];
 
 // 定义要执行的任务
-const tasks = [
-
-
-    {
-        type: 'function',
-        taskNumber: 2,
-        operation: 'create',
-        tokenType: 0, 
-        depositAmount: ethers.utils.parseEther('0.1'), //可以自己改
-        minAmount: ethers.constants.Zero // 0
-    },
-
-    // 任务4 - 调用 create 函数（不带 deadline 和 onBehalfOf）
-    {
-        type: 'function',
-        taskNumber: 4,
-        operation: 'create',
-        tokenType: 1, 
-        depositAmount: ethers.utils.parseEther('0.1'), //可以自己改
-        minAmount: ethers.constants.Zero // 0
-    },
-
-    // 任务6 - 调用 redeem 函数（不带 deadline 和 onBehalfOf）
-    {
-        type: 'function',
-        taskNumber: 6,
-        operation: 'redeem',
-        tokenType: 0, 
-        depositAmount: ethers.utils.parseEther('0.1'), //可以自己改
-        minAmount: ethers.constants.Zero // 0
-    },
-
-    // 任务8 - 调用 redeem 函数（不带 deadline 和 onBehalfOf）
-    {
-        type: 'function',
-        taskNumber: 8,
-        operation: 'redeem',
-        tokenType: 1, 
-        depositAmount: ethers.utils.parseEther('0.1'), //可以自己改
-        minAmount: ethers.constants.Zero // 0
-    }
-
-];
 
 // 生成随机的Gas价格
 function getRandomGasPrice() {
